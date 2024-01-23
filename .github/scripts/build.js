@@ -17,7 +17,9 @@ data.repositories.sort((a, b) => {
     if (nameA > nameB) {
         return 1;
     }
-    return 0;
+    else{
+        return 0;
+    }
 }).forEach(repo =>
     repo.technologies.forEach(tech => {
         if (!categories.hasOwnProperty(tech)) {
@@ -35,7 +37,9 @@ const sortedCategories = Object.fromEntries(Object.entries(categories).sort((a, 
     if (nameA > nameB) {
         return 1;
     }
-    return 0;
+    else{
+        return 0;
+    }
 }));
 
 const toc = Object.keys(sortedCategories)
